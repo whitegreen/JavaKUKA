@@ -1,9 +1,19 @@
 # JavaKUKA
 Javakuka is an open-source project for creating Kuka Robot Language (KRL) codes in Java. 
 
+Currently the following tools are available:
+
+LA: linear algebra.
+
+Robot: forward and inverse kinematics.
+
+KRLwriter: put geometric data into a .src file.
+
 please visit *http://javakuka.com/* for  details.
 
-![alt text](displayKuka2.jpg "Description goes here")
+
+The correspondence between Java, Kuka, and KRL is as follows:
+![alt text](first4.jpg "Description goes here")
 
 
 ![alt text](displayKuka2.jpg "Description goes here")
