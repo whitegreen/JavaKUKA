@@ -2,7 +2,8 @@ package kuka;
 
 //6-axis Robot kinematics
 //v. 22.06.2016,
-//javakuka.com, whitegreen@163.com
+//javakuka.com
+//Hao Hua, Southeast University, whitegreen@163.com
 
 public class Robot {
 	private static final double PI = Math.PI;
