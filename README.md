@@ -11,6 +11,7 @@ Currently the following tools are available:
 
 please visit *http://javakuka.com/* for  details.
 
+The processing user needs to create “…/libraries/kuka/library/kuka.jar”, and then write “import kuka.*;” to import the library.
 
 The correspondence between the Java codes, the robot, and KRL codes looks like:
 ![alt text](first4.jpg "Description goes here")
