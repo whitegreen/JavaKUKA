@@ -5,7 +5,7 @@ import java.io.PrintWriter;
 import java.text.DecimalFormat;
 
 //v. 29.12.2017 
-//javakuka.com, whitegreen@163.com
+//javakuka.org, whitegreen@163.com
 
 public class KRLwriter {
 	private boolean windows; // true:Window, false: Mac
