@@ -4,7 +4,8 @@ import java.io.PrintWriter;
 import java.text.DecimalFormat;
 
 //v. 22.06.2016  tested in Windows and Mac, runs in KRC2 and KRC4;
-//javakuka.com, whitegreen@163.com
+//edited 05.07.2020
+//javakuka.org, whitegreen@163.com
 
 public class FirstProgram {
 	private boolean windows = false; // true:Window, false: Mac
