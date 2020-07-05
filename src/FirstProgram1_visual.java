@@ -3,7 +3,7 @@ package javakuka;
 import peasy.PeasyCam;
 import processing.core.PApplet;
 //v. 22.06.2016
-//javakuka.com, whitegreen@163.com
+//javakuka.org, whitegreen@163.com
 //external lib: 1. Processing 1.5 core; 2. PeasyCam, both available in javakuka.com. 
 
 public class FirstProgram1_visual extends PApplet {  
