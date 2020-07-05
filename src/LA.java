@@ -1,7 +1,7 @@
 package kuka;
 
-//v. 14.08.2017, javakuka.com
-////whitegreen@163.com, hua@arch.ethz.ch
+//v. 14.08.2017, javakuka.org
+////whitegreen@163.com
 
 public class LA {  //linear algebra
 	private static final double PI = Math.PI;
