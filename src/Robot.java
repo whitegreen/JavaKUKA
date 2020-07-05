@@ -2,7 +2,7 @@ package kuka;
 
 //6-axis Robot kinematics
 //v. 22.06.2016,
-//javakuka.com
+//javakuka.org
 //Hao Hua, Southeast University, whitegreen@163.com
 
 public class Robot {
