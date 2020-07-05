@@ -9,7 +9,7 @@ Currently the following tools are available:
 
 **KRLwriter** : put geometric data into a .src file.
 
-please visit *http://javakuka.com/* for  details.
+please visit *http://javakuka.org/* for  details.
 
 The processing user needs to create “…/libraries/kuka/library/kuka.jar”, and then write “import kuka.*;” to import the library.
 
