@@ -3,7 +3,7 @@ package testInverse;
 import java.text.DecimalFormat;
 import kinematik.Robot;
 //v. 07.07.2016
-//javakuka.com, whitegreen@163.com
+//javakuka.org, whitegreen@163.com
 public class TestInverse {
 
 	public static void main(String[] args) {
