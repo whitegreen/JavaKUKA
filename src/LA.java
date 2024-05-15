@@ -1,6 +1,6 @@
 package kuka;
 
-//v. 14.08.2017, javakuka.org
+//v. 15.05.2024, javakuka.org
 ////whitegreen@163.com
 
 public class LA {  //linear algebra
@@ -111,24 +111,31 @@ public class LA {  //linear algebra
 
 	public static double[] ABC(double[][] m) { //Euler angles from 3*3 matrix
 		//ABC: Euler angles, A: round z-axis     B: round y-axis        C: round y-axis
+		double a = 0; // in radius
+		double b = 0; // in radius
+		double c = 0; // in radius
 		double sb = m[2][0];
 		double cb;
-		if (1 - sb * sb < 0)
+		if (Math.abs(m[0][0]) < 1E-6 && Math.abs(m[1][0]) < 1E-6) { // cb=0, Gimbal lock
+			double sa = m[0][1];
+			double ca = m[0][2];
+			a = Math.atan2(sa, ca);
 			cb = 0;
-		else
-			cb = Math.sqrt(1 - sb * sb); 
-		double ca = m[0][0];
-		double sa = -m[1][0];
-		double cc = m[2][2];
-		double sc = -m[2][1];
-		if (Math.abs(m[0][0]) < 1E-7 && Math.abs(m[1][0]) < 1E-7) {
-			cc = m[1][1]; 
-			sc =m[1][2]; 
+			b = Math.atan2(sb, cb);
+		} else {
+			if (1 - sb * sb < 0)
+				cb = 0;
+			else
+				cb = Math.sqrt(1 - sb * sb);
+			double ca = m[0][0];
+			double sa = -m[1][0];
+			double cc = m[2][2];
+			double sc = -m[2][1];
+			a = Math.atan2(sa, ca);
+			b = Math.atan2(sb, cb);
+			c = Math.atan2(sc, cc);
 		}
-		double a = Math.atan2(sa, ca) * -180 / PI;
-		double b = Math.atan2(sb, cb) * -180 / PI;
-		double c = Math.atan2(sc, cc) * -180 / PI;
-		return new double[] { a, b, c };
+		return new double[] { -180 * a / PI, -180 * b / PI, -180 * c / PI };
 	}
 	
 	public static double[] ABCbyQuaternion(double[] q) { //Euler angles from Quaternion
